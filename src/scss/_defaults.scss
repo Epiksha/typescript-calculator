@@ -1,0 +1,10 @@
+button {
+    padding: 0;
+    border: none;
+
+    font-size: inherit;
+
+    cursor: pointer;
+    transition-property: background-color, color;
+    transition-duration: var(--animation-timing);
+}

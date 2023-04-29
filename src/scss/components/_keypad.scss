@@ -1,0 +1,21 @@
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing);
+
+    &__button {
+        aspect-ratio: 1;
+
+        background-color: var(--color-key);
+        color: var(--color-key-text);
+
+        &:hover {
+            background-color: var(--color-key--hover);
+            color: var(--color-key-text--hover);
+        }
+
+        &:disabled {
+            opacity: 0.6;
+        }
+    }
+}

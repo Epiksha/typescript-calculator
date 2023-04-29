@@ -1,0 +1,27 @@
+:root {
+    --color-page-background: #6a9745;
+    --color-white: #fff;
+    --color-key--clear: #d72d2d;
+    --color-key--clear--hover: #b52727;
+    --color-key: #fff;
+    --color-key--hover: #f3f1f1;
+    --color-key-text: #404040;
+    --color-key-text--hover: #4f4f4f;
+
+    --container-width: 32rem;
+    --spacing: 1rem;
+
+    --font-family: Arial, Helvetica, sans-serif;
+
+    --animation-timing: 200ms;
+
+    @media (prefers-color-scheme: dark) {
+        --color-page-background: #1b1b1b;
+
+        --color-key: #3e3e3e;
+        --color-key--hover: #535353;
+
+        --color-key-text: #d0d0d0;
+        --color-key-text--hover: #c3c3c3;
+    }
+}

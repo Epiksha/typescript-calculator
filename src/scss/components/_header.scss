@@ -1,0 +1,35 @@
+.header {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--spacing);
+
+    &__display {
+        grid-column: 1 / 4;
+        display: flex;
+        align-items: center;
+
+        padding-inline: 2rem;
+
+        background-color: var(--color-key);
+        color: var(--color-key-text);
+
+        white-space: nowrap;
+        user-select: none;
+
+        transition-property: background-color, color;
+        transition-duration: var(--animation-timing);
+    }
+
+    &__clear {
+        aspect-ratio: 1;
+
+        background-color: var(--color-key--clear);
+        color: var(--color-white);
+
+        font-weight: 600;
+
+        &:hover {
+            background-color: var(--color-key--clear--hover);
+        }
+    }
+}
